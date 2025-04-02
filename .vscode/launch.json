@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-WorkshopApplication<workshop-task>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.workshop.WorkshopApplication",
+            "projectName": "workshop-task",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

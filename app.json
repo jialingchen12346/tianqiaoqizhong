@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/task/task",
+    "pages/process/process",
+    "pages/quality/quality",
+    "pages/warehouse/warehouse"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#3377FF",
+    "navigationBarTitleText": "车间生产任务系统",
+    "navigationBarTextStyle": "white",
+    "resizable": true,
+    "pageOrientation": "auto",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#3377FF",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home_selected.png"
+      },
+      {
+        "pagePath": "pages/task/task",
+        "text": "任务",
+        "iconPath": "images/task.png",
+        "selectedIconPath": "images/task_selected.png"
+      },
+      {
+        "pagePath": "pages/process/process",
+        "text": "工序",
+        "iconPath": "images/process.png",
+        "selectedIconPath": "images/process_selected.png"
+      },
+      {
+        "pagePath": "pages/quality/quality",
+        "text": "质检",
+        "iconPath": "images/quality.png",
+        "selectedIconPath": "images/quality_selected.png"
+      }
+    ]
+  }
+}

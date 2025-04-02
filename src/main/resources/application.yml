@@ -1,0 +1,40 @@
+spring:
+  profiles:
+    active: dev
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/Crampon
+    username: root
+    password: 123456
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+
+mybatis-plus:
+  mapper-locations: classpath:/com/workshop/mapper/xml/*Mapper.xml
+  type-aliases-package: com.workshop.model
+  configuration:
+    map-underscore-to-camel-case: true
+  global-config:
+    db-config:
+      id-type: auto
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+jwt:
+  secret: workshop-task-secret
+  expiration: 86400000
+
+wechat:
+  app-id: your_app_id
+  app-secret: your_app_secret
+  template-id: your_template_id

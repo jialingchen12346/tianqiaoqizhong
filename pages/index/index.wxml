@@ -1,0 +1,44 @@
+<view class="container">
+  <view class="header">
+    <view class="user-info">
+      <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
+      <text class="nickname">{{userInfo.nickName}}</text>
+      <text class="role">{{userInfo.role}}</text>
+    </view>
+  </view>
+  
+  <view class="quick-actions">
+    <view class="action-item" bindtap="navigateToTask">
+      <image src="/images/task_icon.png"></image>
+      <text>任务分派</text>
+    </view>
+    <view class="action-item" bindtap="navigateToProcess">
+      <image src="/images/process_icon.png"></image>
+      <text>工序管理</text>
+    </view>
+    <view class="action-item" bindtap="navigateToQuality">
+      <image src="/images/quality_icon.png"></image>
+      <text>质检管理</text>
+    </view>
+  </view>
+
+  <view class="statistics">
+    <view class="card">
+      <text class="title">今日统计</text>
+      <view class="stat-grid">
+        <view class="stat-item">
+          <text class="number">{{todayStats.taskCount}}</text>
+          <text class="label">待处理任务</text>
+        </view>
+        <view class="stat-item">
+          <text class="number">{{todayStats.processCount}}</text>
+          <text class="label">进行中工序</text>
+        </view>
+        <view class="stat-item">
+          <text class="number">{{todayStats.qualityCount}}</text>
+          <text class="label">待质检数</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view> 

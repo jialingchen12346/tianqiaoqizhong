@@ -1,0 +1,77 @@
+.container {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.header {
+  background: #3377FF;
+  padding: 40rpx 30rpx;
+  padding-top: calc(40rpx + env(safe-area-inset-top));
+  color: #fff;
+  border-radius: 0 0 30rpx 30rpx;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+
+.quick-actions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20rpx;
+  padding: 30rpx;
+  max-width: 750rpx;
+  margin: 0 auto;
+}
+
+.action-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  padding: 20rpx;
+  border-radius: 12rpx;
+}
+
+.action-item image {
+  width: 80rpx;
+  height: 80rpx;
+  margin-bottom: 10rpx;
+}
+
+.statistics .card {
+  margin: 20rpx auto;
+  max-width: 750rpx;
+  padding: 0 30rpx;
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20rpx;
+  margin-top: 20rpx;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-item .number {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #3377FF;
+  display: block;
+}
+
+.stat-item .label {
+  font-size: 24rpx;
+  color: #666;
+  margin-top: 8rpx;
+}
