@@ -38,3 +38,13 @@ wechat:
   app-id: your_app_id
   app-secret: your_app_secret
   template-id: your_template_id
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    operations-sorter: alpha
+    tags-sorter: alpha
+  api-docs:
+    path: /v3/api-docs
+  default-consumes-media-type: application/json
+  default-produces-media-type: application/json

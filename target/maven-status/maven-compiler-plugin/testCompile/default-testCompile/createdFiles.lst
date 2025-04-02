@@ -1,0 +1,4 @@
+com\workshop\WorkshopApplicationTests.class
+com\workshop\controller\TaskControllerTest.class
+com\workshop\service\impl\TaskServiceImplTest.class
+com\workshop\service\impl\ImportServiceImplTest.class
